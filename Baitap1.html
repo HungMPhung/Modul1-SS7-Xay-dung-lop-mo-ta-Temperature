@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+    let Temperature = function(x) {
+
+        this.celcius = x;
+
+        this.convertToKenvin = function () {
+            return this.celcius + 273.5;
+        };
+        this.convertToFahrenheit = function () {
+            return (this.celcius * 1.8) + 32;
+        };
+    };
+
+    let x = parseFloat(prompt("Enter here"));
+    let Celcius1 = new Temperature(x);
+    let a = Celcius1.convertToFahrenheit();
+    let b = Celcius1.convertToKenvin();
+    console.log(a);
+    console.log(b);
+
+
+</script>
+</body>
+</html>
